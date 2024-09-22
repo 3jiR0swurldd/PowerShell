@@ -1,0 +1,29 @@
+┌──(ejiro㉿kali)-[/home/ejiro]
+└─PS> Get-FileHash /home/ejiro/Desktop/Powershell/files/wallpaper.jpeg | Format-List        
+
+Algorithm : SHA256
+Hash      : 79F73F49E9E67164BCA8408113343146A5A2DAECC62CA33DDB5A0E3546741004
+Path      : /home/ejiro/Desktop/Powershell/files/wallpaper.jpeg
+
+
+
+┌──(ejiro㉿kali)-[/home/ejiro]
+└─PS> Get-FileHash /home/ejiro/Desktop/Powershell/files/Invitation.pdf | Format-List        
+
+Algorithm : SHA256
+Hash      : 5455F699C1725CE0A092F06EBF311A8DEC72FA46F1C61401212AEEB110CBFD14
+Path      : /home/ejiro/Desktop/Powershell/files/Invitation.pdf
+
+
+
+┌──(ejiro㉿kali)-[/home/ejiro]
+└─PS> Get-FileHash /home/ejiro/Desktop/Powershell/files/Invitation.pdf -Algorithim MD5 | Format-List                                                                                    
+Get-FileHash: A parameter cannot be found that matches parameter name 'Algorithim'.
+
+┌──(ejiro㉿kali)-[/home/ejiro]
+└─PS> Get-FileHash /home/ejiro/Desktop/Powershell/files/Invitation.pdf -Algorithm MD5 | Format-List                                                                                     
+
+Algorithm : MD5
+Hash      : 65F520F09D02396CFBB3510B44C3CF19
+Path      : /home/ejiro/Desktop/Powershell/files/Invitation.pdf
+
